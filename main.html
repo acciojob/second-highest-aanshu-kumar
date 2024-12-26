@@ -24,8 +24,8 @@
       }
     }
     let temp=arr[max];
-    arr[max]=arr[j];
-    arr[j]=temp;
+    arr[max]=arr[n-i-1];
+    arr[n-i-1]=temp;
   }
 
   if(arr[0]==arr[n-1])
@@ -37,7 +37,7 @@ return arr[n-2];
 			var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				arr[i] = Number(prompt("Enter element " + (i+1)));
 			}
 			alert(secondHighest(arr));
 		}
